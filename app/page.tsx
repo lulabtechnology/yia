@@ -10,18 +10,22 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappText}`;
 
 const benefits = [
   {
+    number: "01",
     title: "Sabes si realmente ganaste",
     text: "Reportes mensuales claros para entender ingresos, gastos, utilidad y flujo de caja sin depender de suposiciones."
   },
   {
+    number: "02",
     title: "Cumples con la DGI sin vivir preocupado",
     text: "Declaraciones de ITBMS, renta y obligaciones fiscales organizadas dentro de un proceso mensual."
   },
   {
+    number: "03",
     title: "QuickBooks incluido",
     text: "Tecnología contable dentro del honorario para que tu información esté más ordenada y accesible."
   },
   {
+    number: "04",
     title: "Comunicación ejecutiva",
     text: "No solo recibes papeles: recibes lectura financiera, próximos pasos y señales de alerta para decidir mejor."
   }
@@ -130,7 +134,7 @@ export default function Home() {
             <div className="benefit-grid">
               {benefits.map((benefit) => (
                 <article className="benefit-card reveal" key={benefit.title}>
-                  <span className="card-icon" aria-hidden="true" />
+                  <span className="card-number" aria-hidden="true">{benefit.number}</span>
                   <h3>{benefit.title}</h3>
                   <p>{benefit.text}</p>
                 </article>
