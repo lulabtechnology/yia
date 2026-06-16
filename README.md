@@ -68,3 +68,20 @@ public/images/
 
 Este ZIP fija versiones estables y desactiva el uso de package-lock durante la instalación para evitar errores de dependencias en Vercel.
 
+## Nota para Vercel
+
+Este proyecto usa `next.config.mjs`. No debe existir `next.config.ts` en el repo, porque algunas versiones de Next/Vercel fallan al leer esa configuración.
+
+Antes de subir a GitHub, si vienes de una versión anterior, borra del repositorio:
+
+- `next.config.ts`
+- `package-lock.json` viejo
+- `.next/`
+- `node_modules/`
+
+Versiones fijadas para despliegue:
+
+- Next.js 16.2.9
+- React 19.2.7
+- React DOM 19.2.7
+- Node 20.x
