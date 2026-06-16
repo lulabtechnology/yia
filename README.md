@@ -4,11 +4,11 @@ Landing page moderna para **YIA - Your Innovative Accountant**, lista para subir
 
 ## Stack
 
-- Next.js App Router
-- React latest
-- TypeScript
+- Next.js 14.2.5 App Router
+- React 18.3.1
+- TypeScript 5.5.4
 - CSS moderno sin dependencias de UI
-- `next/font` con Inter
+- Inter cargada globalmente
 - Animaciones con CSS + IntersectionObserver
 - Parallax real con JavaScript optimizado para desktop y celular
 - API route opcional para leads por correo usando Resend
@@ -62,3 +62,9 @@ public/images/
 - WhatsApp: cambia `NEXT_PUBLIC_WHATSAPP_NUMBER` o el valor de fallback en `app/page.tsx`, `components/ContactForm.tsx` y `components/WhatsAppFloat.tsx`.
 - Textos: edita `app/page.tsx`.
 - Colores: edita las variables de `app/globals.css`.
+
+
+## Nota Vercel
+
+Este ZIP fija versiones estables y desactiva el uso de package-lock durante la instalación para evitar errores de dependencias en Vercel.
+
