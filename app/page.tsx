@@ -36,7 +36,7 @@ const includes = [
   "Análisis trimestral de estrategia"
 ];
 
-const process = [
+const processSteps = [
   {
     step: "01",
     title: "Diagnóstico gratis de 30 minutos",
@@ -178,7 +178,7 @@ export default function Home() {
               <h2 className="section-title reveal">Un proceso simple para empezar con orden.</h2>
             </div>
             <div className="process-grid">
-              {process.map((item) => (
+              {processSteps.map((item) => (
                 <article className="process-card reveal" key={item.step}>
                   <span>{item.step}</span>
                   <h3>{item.title}</h3>
