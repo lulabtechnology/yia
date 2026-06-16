@@ -1,0 +1,27 @@
+{
+  "name": "yia-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page moderna para YIA - Your Innovative Accountant, lista para GitHub + Vercel.",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "babel-plugin-react-compiler": "latest"
+  },
+  "engines": {
+    "node": ">=20.18.0"
+  }
+}
